@@ -26,11 +26,6 @@ To run this project, you need the following Python packages:
 - scikit-learn
 - matplotlib
 
-You can install them using:
-
-```
-pip install -r requirements.txt
-```
 ## Usage
 Clone the repository:
 
@@ -38,19 +33,11 @@ Clone the repository:
 git clone https://github.com/your-username/car-price-prediction.git
 cd car-price-prediction
 ```
-To train the model, run the following command:
 
-```
-python train.py
-```
-This will start the training process, and the model will be evaluated on the test data.
 
 Files in the Repository
 data/cardekho_data.csv: The dataset containing details of cars.
-src/model.py: Defines the neural network architecture for price prediction.
-src/preprocessing.py: Preprocessing steps for handling and transforming the data.
-train.py: The main script for training the model.
-requirements.txt: List of required Python libraries.
+
 Evaluation Metrics
 The model performance is evaluated using the following metrics:
 
