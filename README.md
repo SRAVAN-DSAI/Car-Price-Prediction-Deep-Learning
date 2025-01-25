@@ -38,10 +38,6 @@ Clone the repository:
 git clone https://github.com/your-username/car-price-prediction.git
 cd car-price-prediction
 ```
-Install dependencies:
-```
-pip install -r requirements.txt
-```
 To train the model, run the following command:
 
 ```
