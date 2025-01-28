@@ -1,56 +1,78 @@
-## Car-Price-Prediction-Deep-Learning
+# Car Price Prediction with Neural Network
 
+This project uses a neural network to predict the selling price of used cars based on various features such as age, fuel type, seller type, and more.
 
-This repository implements a machine learning model to predict car prices based on features like car name, fuel type, seller type, transmission, and car age using a neural network built with PyTorch.
+**Objective:** Build a machine learning model to accurately predict the selling price of used cars.
 
-## Project Overview
+** 1. Methodology:**
+    * Data preprocessing: Data cleaning, feature engineering (creating 'Age' feature), and encoding categorical variables.
+    * Exploratory Data Analysis (EDA): Visualizing data distributions and relationships between features.
+    * Model development: Training a neural network with multiple layers.
+    * Model evaluation: Evaluating model performance using metrics like RMSE and R2. 
+    * Model saving: Saving the trained model for future use.
 
-### Steps:
-1. **Data Exploration and Cleaning**
-   - The dataset is loaded, and necessary cleaning steps are applied (e.g., handling missing values, transforming categorical variables).
-2. **Data Preprocessing**
-   - Transform categorical variables to numerical values using techniques like Label Encoding.
-   - Create new features like car age by calculating it from the car's year of manufacture.
-3. **Model Building**
-   - A neural network model is created and trained to predict car prices.
-4. **Model Evaluation**
-   - The model is evaluated on a test set using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R² Score.
+** 2. Data**
 
-## Requirements
+* **Source:** `cardekho_data.csv` (assumed to be in the same directory)
+* **Features:**
+    * `Car_Name`
+    * `Year`
+    * `Selling_Price`
+    * `Present_Price`
+    * `Kms_Driven`
+    * `Fuel_Type`
+    * `Seller_Type`
+    * `Transmission`
+    * `Owner` 
 
-To run this project, you need the following Python packages:
+** 3. Installation **
 
-- numpy
-- pandas
-- torch
-- scikit-learn
-- matplotlib
+1. **Install required libraries:**
+   ```bash
+   pip install torch torchvision scikit-learn pandas numpy matplotlib seaborn
+## 4. Usage
 
-## Usage
-Clone the repository:
+1. **Run the script:**
+   ```bash
+   python car_price_prediction.py
+## 5. Code Structure
 
-```
-git clone https://github.com/your-username/car-price-prediction.git
-cd car-price-prediction
-```
+* **`preprocess_data(df)`:**
+    * Creates 'Age' feature.
+    * Encodes categorical features (`Car_Name`, `Fuel_Type`, `Seller_Type`, `Transmission`) using `LabelEncoder`.
+    * Splits data into features (X) and target variable (y).
+* **`visualize_data(df)`:**
+    * Creates visualizations:
+        * Distribution of `Selling_Price`.
+        * Relationship between `Selling_Price` and `Age`.
+        * Relationship between `Selling_Price` and `Fuel_Type`.
+    * Saves visualizations to the `visualizations` directory.
+* **`CarPricePredictor(nn.Module)`:**
+    * Defines the neural network architecture:
+        * 3 fully connected layers with ReLU activation.
+* **`train_model(...)`:**
+    * Trains the model with early stopping for improved performance.
+    * Calculates and stores training and validation losses.
+* **`evaluate_model(...)`:**
+    * Evaluates the trained model on the test set.
+    * Calculates and prints RMSE and R² score.
+* **`save_report(...)`:**
+    * Saves a detailed report of model performance to `model_report.txt`.
 
+## 6. Model Training and Evaluation
 
-Files in the Repository
-data/cardekho_data.csv: The dataset containing details of cars.
+* **Training:**
+    * Uses Adam optimizer with an adjusted learning rate.
+    * Trains for a specified number of epochs with early stopping.
+    * Plots training and validation losses for visualization.
+* **Evaluation:**
+    * Calculates and prints RMSE and R² score on the test set.
 
-Evaluation Metrics
-The model performance is evaluated using the following metrics:
+## 7. Model Saving
 
-Mean Absolute Error (MAE)
-Mean Squared Error (MSE)
-R² Score
+* Saves the trained model parameters to `car_price_predictor.pth` for future use.
 
-### (Dependencies)
-```
-numpy
-pandas
-torch
-scikit-learn
-matplotlib
-train.py (Main Script)
-```
+## 8. Results
+
+* The final RMSE and R² score are printed in the console and saved in `model_report.txt`.
+* The trained model is saved in `car_price_predictor.pth`.
