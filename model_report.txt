@@ -1,0 +1,48 @@
+Car Price Prediction Model Report
+========================================
+Test RMSE: 0.9464
+Test R² Score: 0.9670
+
+Training Losses:
+Epoch 1: 31.2673
+Epoch 2: 17.0616
+Epoch 3: 11.3641
+Epoch 4: 7.8954
+Epoch 5: 5.3176
+Epoch 6: 3.6927
+Epoch 7: 2.7402
+Epoch 8: 2.1450
+Epoch 9: 1.7446
+Epoch 10: 1.5626
+Epoch 11: 1.3433
+Epoch 12: 1.2550
+Epoch 13: 1.1841
+Epoch 14: 1.0856
+Epoch 15: 1.0027
+Epoch 16: 0.8970
+Epoch 17: 0.9395
+Epoch 18: 0.8589
+Epoch 19: 0.8364
+Epoch 20: 0.8129
+
+Validation Losses:
+Epoch 1: 32.3364
+Epoch 2: 20.9067
+Epoch 3: 12.7957
+Epoch 4: 7.6835
+Epoch 5: 4.7138
+Epoch 6: 3.2175
+Epoch 7: 2.4245
+Epoch 8: 2.1631
+Epoch 9: 1.9138
+Epoch 10: 1.8063
+Epoch 11: 1.6465
+Epoch 12: 1.5980
+Epoch 13: 1.4833
+Epoch 14: 1.3872
+Epoch 15: 1.3304
+Epoch 16: 1.3177
+Epoch 17: 1.2458
+Epoch 18: 1.2222
+Epoch 19: 1.2717
+Epoch 20: 1.1046
