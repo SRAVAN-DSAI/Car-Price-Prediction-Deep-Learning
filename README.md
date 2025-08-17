@@ -5,11 +5,11 @@ This project uses a neural network to predict the selling price of used cars bas
 **Objective:** Build a machine learning model to accurately predict the selling price of used cars.
 
 ## 1. Methodology:
-    * Data preprocessing: Data cleaning, feature engineering (creating 'Age' feature), and encoding categorical variables.
-    * Exploratory Data Analysis (EDA): Visualizing data distributions and relationships between features.
-    * Model development: Training a neural network with multiple layers.
-    * Model evaluation: Evaluating model performance using metrics like RMSE and R2. 
-    * Model saving: Saving the trained model for future use.
+     Data preprocessing: Data cleaning, feature engineering (creating 'Age' feature), and encoding categorical variables.
+     Exploratory Data Analysis (EDA): Visualizing data distributions and relationships between features.
+     Model development: Training a neural network with multiple layers.
+     Model evaluation: Evaluating model performance using metrics like RMSE and R2. 
+     Model saving: Saving the trained model for future use.
 
 ## 2. Data
 
